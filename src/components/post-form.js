@@ -8,14 +8,13 @@ class PostForm extends Component {
       user: '',
       text: ''
     }
-
-    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick () {
+  handleClick = () => {
     const post = {
       user: this.state.user,
-      text: this.state.text
+      text: this.state.text,
+      upvotes: 0
     }
 
     this.props.addPost(post);

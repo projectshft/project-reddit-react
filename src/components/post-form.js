@@ -23,7 +23,7 @@ class PostForm extends Component {
 
   render() {
     return (
-      <form className="beer-form">
+      <form>
         <h3>Add a New Post</h3>
 
         <div className="form-group">

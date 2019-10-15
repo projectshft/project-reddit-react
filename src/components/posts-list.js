@@ -4,12 +4,12 @@ import Post from './post';
 const PostsList = (props) => {
   const postItems = props.posts.map((post, index) => {
     return (
-      <Post key={index} post={post} />
+      <Post key={index} post={post} upvotePost={props.upvotePost} />
     )
   })
 
   return (
-    <ul className='col-md-4 list-group'>
+    <ul className='list-group'>
       {postItems}
     </ul>
   )

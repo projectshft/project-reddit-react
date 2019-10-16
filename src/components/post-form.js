@@ -6,7 +6,8 @@ class PostForm extends Component {
 
     this.state = {
       user: '',
-      text: ''
+      text: '',
+      upvotes: 0
     }
   }
 
